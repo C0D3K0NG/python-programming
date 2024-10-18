@@ -1,0 +1,15 @@
+from tkinter import *
+from PIL import Image, ImageTk
+root=Tk()
+root.geometry("300x200")
+root.maxsize(600,400)
+root.minsize(150,100)
+img = Image.open("tkinterProjects/pics/pic2.jpg"  )
+photo = ImageTk.PhotoImage(img)
+imager= Label(image=photo)
+imager.pack()
+img2 = Image.open("tkinterProjects/pics/pic1.jpg")
+photo2 = ImageTk.PhotoImage(img2)
+imager2= Label(image=photo2)
+imager2.pack()
+root.mainloop()
