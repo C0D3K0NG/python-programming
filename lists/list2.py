@@ -3,15 +3,13 @@
 # corresponding elements in L and M.
 # For instance, if L = [3, 1, 4] and M = [1, 5, 9], then N should equal [4,6,13].
 
-def add_lists(L, M):
-    if len(L) != len(M):
-        print("Error: The lists must be of the same length.")
-        return None
-    N = [L[i] + M[i] for i in range(len(L))]
-    return N
 
-L = [3, 1, 4]
-M = [1, 5, 9]
-N = add_lists(L, M)
-if N:
-    print("The resulting list N is:", N)
+listm=[2,7,8]
+listn=[1,6,9]
+listc=[]
+if len(listm)==len(listn):
+    for x in range(0,len(listm)):
+        listc.append(listm[x]+listn[x])
+    print(listc)
+else:
+    print("Lists sizes are not of the same size")
